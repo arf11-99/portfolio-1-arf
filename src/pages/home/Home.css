@@ -1,0 +1,248 @@
+/* # HERO # */
+#hero {
+    position: relative;
+    width: 100%;
+    /* top: 60px;
+    left: 0; */
+    height: 70vh;
+    /* height: calc(100vh - 80vh); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #1e2d24; */
+    padding: 0px 40px;
+    background-image: url('../../assets/images/bg/bg-hero.png');
+    background-size: cover;
+    /* margin-bottom: 90px; */
+}
+
+#hero .hero-content h1 {
+    font-size: 28px;
+    font-weight: 700;
+    /* color: #e5f4e1; matcha light text */
+    /* color: #151515; */
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+#hero .hero-content p {
+    font-size: 16px;
+    font-weight: 400;
+    /* color: #ccc; abu-abu elegan */
+    color: #acb7be;
+    max-width: 600px;
+    line-height: 1.6;
+}
+/* # END HERO # */
+
+
+
+/* # WHY-US # */
+#why-us {
+    position: relative;
+    padding: 90px 40px;
+    
+    /* background-color: #e5e5e5; */
+}
+
+#why-us h2 {
+    color: #333;
+    margin-bottom: 50px;
+}
+
+#why-us ul {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+/* # END WHY-US # */
+
+
+
+/* # OUR COURSES # */
+#our-courses {
+    padding: 90px 40px;
+    position: relative;
+    /* padding-left: 100px; */
+    /* background-color: #16384c; */
+    background-color: #4D6651;
+    
+}
+
+#our-courses h2 {
+    /* color: #333; */
+    color: white;
+    margin-bottom: 50px;
+}
+
+/* #our-courses ul {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+} */
+
+#our-courses ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+/* # END OUR COURSES # */
+
+
+
+/* # ABOUT US # */
+.about-section{
+    background: url('../../assets/images/bg/bg-about-us.jpg') no-repeat left;;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+/* # END ABOUT US # */
+
+
+
+
+@media (min-width: 600px ) {
+    #our-courses ul {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 700px ) {
+    #why-us ul {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 800px) {
+    #hero {
+        height: 60vh;
+    }
+
+    #hero .hero-content h1 {
+        color: #fff;
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #hero {
+        height: 95vh;
+        /* background-position: center; */
+    }
+
+    #hero .hero-content h1 {
+        font-size: 48px;
+    }
+
+    #hero .hero-content p {
+        font-size: 20px;
+    }
+
+    /* #why-us {
+        position: relative;
+        padding: 0px 165px;
+    } */
+
+    #why-us h2 {
+        text-align: center;
+    }
+
+    #why-us ul {
+        justify-content: center;
+    }
+
+    #our-courses {
+        padding: 90px 165px;
+    }
+
+    #our-courses ul {
+        justify-content: flex-start;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

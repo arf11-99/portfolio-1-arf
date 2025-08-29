@@ -1,0 +1,280 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    transition: 0.5s;
+    z-index: 100;
+}
+
+
+
+/* # MENU # */
+#menu {
+    display: none;
+}
+/* # END MENU # */
+
+
+
+/* # USER ACTIONS # */
+#user-actions {
+    display: none;
+}
+/* # END USER ACTIONS # */
+
+
+
+/* # LOGO # */
+#logo {
+    position: relative;
+    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+}
+/* # END LOGO # */
+
+
+
+/* # TOGGLE # */
+#toggleMenu {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#toggleMenu li {
+    list-style: none;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    border-radius: 4px;
+}
+
+#toggleMenu::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    border-radius: 8px;
+    opacity: 0;
+}
+#toggleMenu::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    border-radius: 8px;
+    opacity: 0;
+}
+
+#toggleMenu.active li {
+    opacity: 0;
+}
+
+#toggleMenu.active::before,
+#toggleMenu.active::after {
+    opacity: 1;
+}
+/* # END TOGGLE # */
+
+
+
+/* # MENU BAR # */
+#menu-bar {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 85px;
+    height: calc(100vh - 80px);
+    top: 80px;
+    left: 0;
+    padding: 40px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#menu-bar.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#menu-bar li:first-child {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 50px; */
+}
+
+#menu-bar li:first-child a {
+    color: #2563eb;
+}
+
+#menu-bar li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#menu-bar li a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+#menu-bar li a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+#menu-bar li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/* # END MENU-BAR # */
+
+
+
+
+
+/* ======================== Media Queries ======================== */
+@media (min-width: 900px) {
+    /* # MENU # */
+    #menu {
+        display: flex;
+        gap: 30px;
+    }
+
+    #menu li {
+        list-style: none;
+    }
+
+    #menu li a {
+        letter-spacing: 0.05em;
+        font-size: 14px;
+        text-decoration: none;
+        color: #333;
+        text-transform: none;
+        font-weight: bold;
+        font-style: normal;
+        transition: 0.5s;
+    }
+
+    #menu li a:hover {
+        color: #666;
+    }
+    /* # END MENU # */
+
+
+
+    /* # USER ACTIONS # */
+    #user-actions {
+        display: flex;
+        gap: 15px;
+    }
+
+    #user-actions li {
+        position: relative;
+        list-style: none;
+        width: 110px;
+        height: 40px;
+        border-radius: 7px;
+    }
+
+    #user-actions li#logIn {
+        border: 1px solid #6F8B6F;
+        transition: 0.5s;
+    }
+
+    #user-actions li#logIn:hover {
+        background-color: #f1f1f1;
+    }
+
+    #user-actions li#signUp {
+        background-color: #6F8B6F;
+        transition: 0.5s;
+    }
+
+    #user-actions li#signUp:hover {
+        background-color: #8BA989;
+    }
+
+    #user-actions li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 40px;
+        letter-spacing: 0.05em;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: none;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    #user-actions li#logIn a {
+        color: #666;
+    }
+
+    #user-actions li#signUp a {
+        color: #F5F5F5;
+    }
+    /* # END USER ACTIONS # */
+
+
+
+    /* # TOGGLE MENU # */
+    #toggleMenu {
+        display: none;
+    }
+    /* # END TOGGLE MENU # */
+
+
+
+    /* # MENU-BAR # */
+    #menu-bar {
+        display: none;
+    }
+    /* # END MENU-BAR # */
+}
+
+@media (min-width: 1200px) {
+    nav {
+        padding: 10px 165px;
+    }
+}

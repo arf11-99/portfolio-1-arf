@@ -1,0 +1,29 @@
+.why-us-cards {
+    position: relative;
+    /* background-color: red; */
+    list-style: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 4px;
+    padding: 15px 20px;
+    width: 300px;
+    height: 170px;
+    background-color: white;
+}
+
+.why-us-cards .icon {
+    position: relative;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.why-us-cards .icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.why-us-cards h4 {
+    margin-bottom: 5px;
+}
