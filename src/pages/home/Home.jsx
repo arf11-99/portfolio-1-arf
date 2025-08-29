@@ -5,7 +5,7 @@ import checkmarkCircleOutline from '../../assets/icons/ionicons/checkmark-circle
 import WhyUsCards from '../../components/whyUsCards/WhyUsCards';
 import bgProgrammingPixelArt from '../../assets/images/bg/bg-programming-pixel-art.png'
 import pixelArtHtml from '../../assets/images/logo/pixel-art/pixel-art-html.png'
-import pixelArtCss from '../../assets/images/logo/pixel-art/pixel-art-Css.png'
+import pixelArtCss from '../../assets/images/logo/pixel-art/pixel-art-css.png'
 import OurCourseCards from '../../components/ourCourseCards/OurCourseCards';
 
 import React, { useState, useEffect } from 'react';
