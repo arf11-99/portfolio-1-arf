@@ -18,7 +18,7 @@ const AppBar = () => {
             <ul id="menu">
                 <li><a href="#">Courses</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Pricing</a></li>
+                {/* <li><a href="#">Pricing</a></li> */}
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Community</a></li>
             </ul>
